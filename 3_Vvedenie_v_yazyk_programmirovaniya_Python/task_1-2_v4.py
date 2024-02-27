@@ -3,7 +3,7 @@ from math import e, tan, sin, sqrt
 # задание 1
 print('Задание 1, вариант 4')
 
-print('Вычисляем равенство: \n'
+print('Вычисляем равенство:\n'
       '          3 + e^y-1\n'
       'b = --------------------\n'
       '     1+x^2 * |y - tg(z)|')
@@ -28,7 +28,7 @@ else:
 # задание 2
 print('Задание 2, вариант 4')
 
-print('Вычисляем равенство, в зависимости от условия: \n'
+print('Вычисляем равенство, в зависимости от условия:\n'
       '     | sin(x+y) + 2*2(x+y)^2, x-y > 0\n'
       'b = /  sin(x-y) + (x-y)^3, x-y < 0\n'
       '    \\  |x^2 + sqrt(y)|, y != 0, x = 0 \n'
@@ -43,7 +43,7 @@ elif y1 != 0 and x1 == 0:
     module1 = x1 ** 2 + sqrt(y1)
     if module1 < 0:
         module1 = module1 * (-1)
-    print(f'b = |x^2 + sqrt(y)| {module1}')
+    print(f'b = |x^2 + sqrt(y)| = {module1}')
 elif x1 - y1 > 0:
     print(f'b = sin(x+y) + 2*(x+y)^2 = {(sin(x1 + y1)) + (2 * ((x1 + y1) ** 2))}')
 elif x1 - y1 < 0:
